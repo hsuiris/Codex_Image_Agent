@@ -3,7 +3,7 @@
 > Operation mode: CREATE-CHARACTER
 > Authoritative sources: <repo-root>/Story_Character/預告片_按場次重新整理.md (appearance scope and scene version) + <repo-root>/全角色總表.md (identity facts and relationships)
 > Version ID: LEVANUS-V1-1587_MOON_ANGEL
-> Identity master: PENDING-GENERATION → 01-levanus-front-fullbody.png
+> Identity master: PENDING-USER-APPROVAL → 01-levanus-young-front-fullbody.png
 > Generation gate: READY-FOR-DOWNSTREAM-01-REQUEST
 > Trailer evidence: Selected by 預告片_按場次重新整理.md; use that source as the exact scene authority
 

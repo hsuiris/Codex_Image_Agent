@@ -9,7 +9,8 @@
 ## Codex Generation Manifest
 
 ### (a) Exact filenames
-- [ ] 01-levanus-front-fullbody.png — PENDING-GENERATION
+- [ ] 01-levanus-young-front-fullbody.png — PENDING-USER-APPROVAL (SCENE 02 young version)
+- [x] 01-levanus-adult-front-fullbody.png — PRESENT (adult version; retained as a separate age variant)
 - [ ] 02-levanus-four-view-master.png — PENDING-GENERATION
 - [ ] 03-levanus-expression-sheet.png — PENDING-GENERATION
 - [ ] 04-levanus-costume-detail-sheet.png — PENDING-GENERATION
@@ -19,7 +20,7 @@
 
 ### (b) Character gate
 
-Generate only 01-levanus-front-fullbody.png first. Present that single image and stop. Generate the remaining sheets only after explicit user approval of 01. Other characters do not change this character's gate.
+Generate only 01-levanus-young-front-fullbody.png first. Present that single image and stop. Generate the remaining sheets only after explicit user approval of the young 01. Other characters do not change this character's gate.
 
 ### (c) Consistency statement
 
@@ -32,7 +33,7 @@ For 01, use all three style images below only as visual-style references and nev
 - ../../style/McEZ7GwGWkAAAAABJRU5ErkJggg.png
 - ../../style/8fJgh1kde6P3IAAAAASUVORK5CYII.png
 
-For 02–07, additionally use ./01-levanus-front-fullbody.png as this character's identity reference while retaining all three fixed style images.
+For 02–07, additionally use ./01-levanus-young-front-fullbody.png as this character's identity reference while retaining all three fixed style images.
 
 ### (e) Existing PNG state
 
@@ -40,9 +41,9 @@ All files are PENDING-GENERATION. Do not overwrite any future approved PNG.
 
 ### (f) Single-generation policy
 
-Each user image request permits at most one image-generation call and one new image. Present it immediately and stop. Technical inspection may report possible deviations but must not auto-reject, move or regenerate. Only after the user explicitly requests a modification may the prior unapproved candidate be placed in rejects/ and one replacement generated.
+Each user image request permits at most one image-generation call and one new image. Present it immediately and stop. Technical inspection may report possible deviations but must not auto-reject, move or regenerate. Age variants are retained as explicitly named sibling files, not treated as rejects.
 
-## 01 — 01-levanus-front-fullbody.png
+## 01 — 01-levanus-young-front-fullbody.png
 
 Input images:
 - ../../style/SV8zdQHTYqQAAAABJRU5ErkJggg.png
@@ -58,7 +59,7 @@ identity drift, wrong character, copied reference-person identity, age drift, pa
 ## 02 — 02-levanus-four-view-master.png
 
 Input images:
-- ./01-levanus-front-fullbody.png
+- ./01-levanus-young-front-fullbody.png
 - ../../style/SV8zdQHTYqQAAAABJRU5ErkJggg.png
 - ../../style/McEZ7GwGWkAAAAABJRU5ErkJggg.png
 - ../../style/8fJgh1kde6P3IAAAAASUVORK5CYII.png
@@ -72,7 +73,7 @@ identity drift, wrong character, copied reference-person identity, age drift, pa
 ## 03 — 03-levanus-expression-sheet.png
 
 Input images:
-- ./01-levanus-front-fullbody.png
+- ./01-levanus-young-front-fullbody.png
 - ../../style/SV8zdQHTYqQAAAABJRU5ErkJggg.png
 - ../../style/McEZ7GwGWkAAAAABJRU5ErkJggg.png
 - ../../style/8fJgh1kde6P3IAAAAASUVORK5CYII.png
@@ -86,7 +87,7 @@ identity drift, different faces, hairstyle change, eye-color change, age change,
 ## 04 — 04-levanus-costume-detail-sheet.png
 
 Input images:
-- ./01-levanus-front-fullbody.png
+- ./01-levanus-young-front-fullbody.png
 - ../../style/SV8zdQHTYqQAAAABJRU5ErkJggg.png
 - ../../style/McEZ7GwGWkAAAAABJRU5ErkJggg.png
 - ../../style/8fJgh1kde6P3IAAAAASUVORK5CYII.png
@@ -100,7 +101,7 @@ identity drift, wrong character, copied reference-person identity, age drift, pa
 ## 05 — 05-levanus-color-material-sheet.png
 
 Input images:
-- ./01-levanus-front-fullbody.png
+- ./01-levanus-young-front-fullbody.png
 - ../../style/SV8zdQHTYqQAAAABJRU5ErkJggg.png
 - ../../style/McEZ7GwGWkAAAAABJRU5ErkJggg.png
 - ../../style/8fJgh1kde6P3IAAAAASUVORK5CYII.png
@@ -114,7 +115,7 @@ identity drift, wrong character, copied reference-person identity, age drift, pa
 ## 06 — 06-levanus-prop-construction-sheet.png
 
 Input images:
-- ./01-levanus-front-fullbody.png
+- ./01-levanus-young-front-fullbody.png
 - ../../style/SV8zdQHTYqQAAAABJRU5ErkJggg.png
 - ../../style/McEZ7GwGWkAAAAABJRU5ErkJggg.png
 - ../../style/8fJgh1kde6P3IAAAAASUVORK5CYII.png
@@ -128,7 +129,7 @@ full-body character, face, head, human silhouette, action scene, prop being held
 ## 07 — 07-levanus-body-reference-sheet.png
 
 Input images:
-- ./01-levanus-front-fullbody.png
+- ./01-levanus-young-front-fullbody.png
 - ../../style/SV8zdQHTYqQAAAABJRU5ErkJggg.png
 - ../../style/McEZ7GwGWkAAAAABJRU5ErkJggg.png
 - ../../style/8fJgh1kde6P3IAAAAASUVORK5CYII.png
@@ -158,4 +159,4 @@ PENDING-USER-INPUT: species, birth mechanism and complete non-human anatomy rema
 
 ## Instruction for Codex
 
-Read <repo-root>/Story_Character/01_主角陣營/蕾瓦娜斯/CHARACTER_SPEC.md and this PROMPTS.md. Follow the generation gate. Generate exactly one image per user request, begin with 01-levanus-front-fullbody.png, present it and stop for approval.
+Read <repo-root>/Story_Character/01_主角陣營/蕾瓦娜斯/CHARACTER_SPEC.md and this PROMPTS.md. Follow the generation gate. Generate exactly one image per user request, begin with 01-levanus-young-front-fullbody.png, present it and stop for approval.
